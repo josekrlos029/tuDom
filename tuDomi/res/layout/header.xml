@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTituloR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/carritoTitle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCantidadR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cantidad: 0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginBottom="10dp">
+		
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:src="@drawable/dolar2"
+              />
+
+         <TextView
+             android:id="@+id/lblPrecioR"
+             android:text="0"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginLeft="@dimen/dimen_5dp"
+             android:textSize="@dimen/text_size_about_details"
+             android:textColor="@color/list_text_color"
+             android:textStyle="bold" />
+ 
+     </LinearLayout>
+
+    <com.twincoders.custombuttondemo.widgets.CustomButton
+        android:id="@+id/btnHacerPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:drawablePadding="10dp"
+        android:text="@string/hacerPedido"
+        android:layout_gravity="center"
+        local:buttonColor="@color/ok_color"
+        local:iconLeft="@drawable/ic_ok" />
+
+    <com.twincoders.custombuttondemo.widgets.CustomButton
+        android:id="@+id/btnBorrarPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/quitarPedido"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center"
+        local:buttonColor="@color/cancel_color"
+        local:iconLeft="@drawable/ic_cancel" />
+    
+</LinearLayout>

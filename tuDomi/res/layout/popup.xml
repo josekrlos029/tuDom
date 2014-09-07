@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/popup" >
+    
+    <TextView
+        android:id="@+id/tvPopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Large Text"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvPopSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lines="3"
+        android:gravity="center"
+        android:text="Medium Text"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/list_text_color" />
+
+	<LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp">
+		
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:src="@drawable/dolar2"
+              />
+
+         <TextView
+             android:id="@+id/lblPopPrecio"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:layout_marginLeft="@dimen/dimen_5dp"
+             android:textSize="@dimen/text_size_about_details"
+             android:textColor="@color/list_text_color"
+             android:textStyle="bold" />
+ 
+     </LinearLayout>
+	
+	<LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp">
+    
+		<TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="Cantidad:"
+             android:layout_marginLeft="@dimen/dimen_5dp"
+             android:textSize="@dimen/text_size_about_details"
+             android:textColor="@color/list_text_color"
+             android:textStyle="bold" />
+
+		<EditText
+		    android:id="@+id/etCantidad"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:background="@drawable/jose_textfield_activated_holo_light"
+		    android:inputType="number" />
+	    
+	</LinearLayout>
+	<TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="Indicaciones:"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+             android:textSize="@dimen/text_size_about_details"
+             android:textColor="@color/list_text_color"
+             android:textStyle="bold" />
+
+	<EditText
+	    android:id="@+id/etInidicaciones"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="15dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:background="@drawable/jose_textfield_activated_holo_light"
+	    android:ems="10" >
+
+	    <requestFocus />
+	</EditText>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:id="@+id/frame_map_pedido">
+		
+    </FrameLayout>
+    
+   <FrameLayout
+       android:id="@+id/frameMainContainer"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.55" >
+		
+		<ScrollView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+
+	       <LinearLayout
+	        android:layout_width="match_parent"
+	   		android:layout_height="match_parent"
+	    	android:orientation="vertical" >
+		   
+		       <TextView
+			        android:id="@+id/tvValorCompra"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:text="Large Text"
+			        android:layout_marginTop="25dp"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+			    <TextView
+			        android:id="@+id/tvValorDomicilio"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:lines="2"
+			        android:gravity="center"
+			        android:text="Valor del Domicilio: $2000 - $3000"
+			        android:textAlignment="center"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />	
+			        
+			    <TextView
+			        android:id="@+id/tvDireccion"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:lines="1"
+			        android:text="Modificar Dirección:"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+			    <EditText
+				    android:id="@+id/etDireccion"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="15dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginRight="20dp"
+				    android:background="@drawable/jose_textfield_activated_holo_light"
+				    android:ems="10" >
+			
+				</EditText>	
+				
+			    <TextView
+			        android:id="@+id/tvReferencias"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:lines="1"
+			        android:text="Barrio y/o Referencias"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+			    <EditText
+				    android:id="@+id/etReferencias"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="15dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginRight="20dp"
+				    android:background="@drawable/jose_textfield_activated_holo_light"
+				    android:ems="10" >
+			
+				</EditText>
+				
+	    	    <TextView
+	    	        android:id="@+id/tvTelefono"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:lines="1"
+			        android:text="Teléfono:"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+			    <EditText
+				    android:id="@+id/etTelefono"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="15dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginRight="20dp"
+				    android:background="@drawable/jose_textfield_activated_holo_light"
+				    android:ems="10"
+				    android:inputType="number" >
+			
+				</EditText>
+				
+			    <TextView
+			        android:id="@+id/tvFormaPago"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginLeft="20dp"
+			        android:layout_marginRight="20dp"
+			        android:lines="1"
+			        android:text="¿Como Pagarás?"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			    
+			    <EditText
+				    android:id="@+id/etFormaPago"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="15dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginRight="20dp"
+				    android:background="@drawable/jose_textfield_activated_holo_light"
+				    android:ems="10" >
+			
+				</EditText>	
+				<com.twincoders.custombuttondemo.widgets.CustomButton 
+				    android:id="@+id/btnConfirmarPedido"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_alignParentTop="true"
+			        android:layout_centerHorizontal="true"
+			        android:text="@string/confirmarPedido"
+			        android:layout_marginBottom="10dp"
+			        android:paddingTop="15dp"
+			        android:paddingBottom="15dp"
+			        android:paddingLeft="70dp"
+			        android:paddingRight="70dp"
+			        android:drawablePadding="10dp"
+			        android:layout_gravity="center"
+        			local:buttonColor="@color/ok_color"
+                    local:iconLeft="@drawable/ic_ok" />
+				
+	       </LinearLayout>
+       
+   		</ScrollView>
+   		
+    </FrameLayout>
+       
+
+</LinearLayout>
